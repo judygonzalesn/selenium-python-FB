@@ -18,8 +18,8 @@ class PythonOrgSearch(unittest.TestCase):
         self.chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:0914")
         self.chrome_options.add_argument("--window-size=1920,1080")
         self.driver = webdriver.Chrome(executable_path="C:\\Python\\Selenium\\chromedriver.exe", options=self.chrome_options)
-        self.driver.get("https://www.facebook.com/messages/t/judygonzalesn")
-        # self.driver.get("https://www.facebook.com/messages/t/0chigydicheck0")
+        self.driver.get("https://www.facebook.com/messages/t/[senderFBUsername]")
+        # self.driver.get("https://www.facebook.com/messages/t/[recieverFBUsername]")
         self.driver.implicitly_wait(10)
 
     def test_search_in_python_org(self):
